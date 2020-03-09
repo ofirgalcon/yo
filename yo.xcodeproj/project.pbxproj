@@ -49,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06C9FF56238E34C500E9C67D /* yo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = yo.entitlements; sourceTree = "<group>"; };
 		841717921ABCA0CE00150A32 /* yo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		841717961ABCA0CE00150A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841717991ABCA0CE00150A32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -110,6 +111,7 @@
 		841717941ABCA0CE00150A32 /* yo */ = {
 			isa = PBXGroup;
 			children = (
+				06C9FF56238E34C500E9C67D /* yo.entitlements */,
 				9A16F3131AEAA2AC001336EA /* CommandLine.swift */,
 				9A16F3141AEAA2AC001336EA /* Option.swift */,
 				9A16F3151AEAA2AC001336EA /* StringExtensions.swift */,
@@ -200,7 +202,9 @@
 				TargetAttributes = {
 					841717911ABCA0CE00150A32 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 87TMJ8HHJG;
 						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
 					};
 					841717A11ABCA0CE00150A32 = {
 						CreatedOnToolsVersion = 6.2;
@@ -407,9 +411,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = yo/yo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2.0.2;
+				DEVELOPMENT_TEAM = 87TMJ8HHJG;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -419,6 +427,7 @@
 				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.sheagcraig.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -427,9 +436,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = yo/yo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2.0.2;
+				DEVELOPMENT_TEAM = 87TMJ8HHJG;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -439,6 +452,7 @@
 				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.sheagcraig.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
